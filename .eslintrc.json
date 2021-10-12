@@ -20,7 +20,20 @@
         "ts": "never"
       }
     ]
+    // "import-helpers/order-imports": [
+    //   "warn",
+    //   {
+    //     "newlineBetween": "always",
+    //     "groups": ["module", "/^@/", ["parent", "sibling", "index"]],
+    //     "alphabetize": { "order": "asc", "ignoreCase": true }
+    //   }
+    // ],
+    // "import/no-extraneous-dependencies": [
+    //   "error",
+    //   { "devDependencies": ["**/*.spec.js"] }
+    // ]
   },
+
   "settings": {
     "import/resolver": {
       "typescript": {}
