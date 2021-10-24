@@ -5,7 +5,7 @@ import {
   TableForeignKey,
 } from 'typeorm';
 
-export class CreateSpecificationsCars1632529511811
+export class CreateSpecificationsCars1634166073078
   implements MigrationInterface
 {
   public async up(queryRunner: QueryRunner): Promise<void> {
