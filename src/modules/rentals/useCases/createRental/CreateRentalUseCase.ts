@@ -4,7 +4,7 @@ import { Rental } from '@modules/rentals/infra/typeorm/entities/Rental';
 import { IRentalsRepository } from '@modules/rentals/repositories/IRentalRepository';
 import { AppError } from '@shared/errors/AppError';
 import { IDateProvider } from '@shared/container/providers/DateProvider/IDateProvider';
-import { CarsRepository } from '@modules/cars/infra/typeorm/repositories/CarsRepository';
+import { ICarsRepository } from '@modules/cars/repositories/ICarsRepository';
 
 interface IRequest {
   user_id: string;
@@ -20,7 +20,7 @@ class CreateRentalUseCase {
     @inject('DayjsDateProvider')
     private dateProvider: IDateProvider,
     @inject('CarsRepository')
-    private carsRepository: CarsRepository,
+    private carsRepository: ICarsRepository,
   ) {}
 
   async execute({
